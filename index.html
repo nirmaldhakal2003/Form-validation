@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script defer src="script.js"></script>
+
+    <style>
+        .Form {
+            width: 30%;
+            margin-left: 600px;
+            margin-top: 200px;
+        }
+        .Form label, .Form input, .Form select {
+            display: block;
+            margin: 10px 0;
+        }
+        #error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id='error'></div>
+    <div class="Form">
+        <form id="form" action="/" method="GET">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="gender-male" value="Male"> Male
+            <input type="radio" name="gender" id="gender-female" value="Female"> Female
+
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="">Select your country</option>
+                <option value="Nepal">Nepal</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
